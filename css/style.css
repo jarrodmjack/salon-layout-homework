@@ -1,0 +1,612 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  font-size: 62.5%;
+}
+
+
+.container {
+  width: 1500px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+* {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+
+}
+header a {
+  color: black;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+
+header > * {
+  font-size: 1.4rem;
+  font-weight: bold;
+} 
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.ham {
+  font-size: 3rem;
+  display: none;
+}
+
+
+.header-icon {
+  font-size: 2.5rem;
+}
+
+.logo {
+  font-family: 'Dancing Script', sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 4rem;
+}
+
+
+
+/*  Main Section */
+
+.mainbg-img {
+  background-image: url(/assets/bg-main3.jpeg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.bg-extend {
+  padding: 20rem 0;
+}
+
+.sideways-text {
+  transform: rotate(90deg);
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 13rem;
+  font-weight: lighter;
+  font-family: serif;
+
+}
+
+.h1-container {
+  font-family: 'Inter';
+  padding: 30rem 0 5rem 0;
+  display: flex ;
+  justify-content: space-between;
+  color: white;
+}
+
+.h1-container h1 + p {
+  font-size: 2rem;
+}
+
+.h1-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.services-btn {
+  font-size: 2rem;
+  background-color: black;
+  width: 200px;
+  padding: 2rem;
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.services-btn:hover {
+  opacity: .7;
+}
+
+/* first visit box */
+
+.first-visit {
+  background-color: black;
+  color: white;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 3rem;
+  gap: 50px;
+  font-size: 1.8rem;
+  line-height: 5rem;
+}
+
+.visit-btn {
+  color: white;
+}
+
+.percent {
+  font-size: 3rem;
+  font-family: 'Dancing Script', 'Inter', sans-serif;
+  font-weight: bold;
+}
+
+
+.book-btn {
+  background: white;
+  color: black;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+}
+.book-btn:hover {
+  opacity: .7;
+}
+
+/* triple section */
+
+.triple-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-family: 'Inter', sans-serif;
+  padding: 10rem 0;
+}
+.triple-container h4 {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: serif;
+}
+
+.triple-container p {
+  font-size: 1.5rem;
+  text-transform: none;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 23%;
+  text-align: center;
+  gap: 35px;
+  line-height: 2rem;
+}
+
+.triple-icon {
+  font-size: 8rem;
+}
+
+/* momentum section */
+
+.momentum-container {
+  padding: 10rem 0;
+  display: flex;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.momentum-container h2 {
+  font-size: 6rem;
+  font-family: serif;
+  font-weight: bold;
+  line-height: 7rem;
+}
+
+.momentum-text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 50px;
+}
+
+
+.momentum-text p {
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+}
+
+.read-more {
+  background-color: black;
+  color: white;
+  width: 150px;
+  text-align: center;
+  padding: 2rem 2.5rem;
+  font-size: 1.4rem;
+}
+
+.read-more:hover {
+  opacity: .7;
+}
+
+.momentum-img-container{
+  display: flex;
+  justify-content: space-around;
+}
+.momentum-pic {
+  width: 80%;
+}
+
+
+/* styler section */
+
+.styler-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 15rem 0 25rem 0;
+}
+
+.styler-wrapper img {
+  border-radius: 15px 15px 0 0;
+}
+
+/* .styler-wrapper span {
+  display: block;
+  text-align: center;
+} */
+
+.style-span-wrapper {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 0 15px 15px;
+  padding: 2rem;
+  background-color: black;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  gap: 10px;
+}
+
+.styler-name {
+  font-size: 2rem;
+  font-family:serif, sans-serif;
+}
+.styler-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+
+/* color day section */
+
+.color-day-container {
+  width: 100%;
+  display: flex;
+  padding: 15rem 0 15rem 10%;
+  background-image: url(/assets/pexels-photo-6724317.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+.color-day-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.color-day-wrapper h5 {
+  font-size: 3rem;
+}
+
+.color-day-wrapper p {
+  font-size: 4rem;
+  line-height: 5rem;
+}
+
+.appt-btn {
+  background-color: black;
+  color: white;
+  width: 225px;
+  text-align: center;
+  padding: 2rem 2rem;
+  font-size: 1.4rem;
+}
+.appt-btn:hover {
+  opacity: .7;
+}
+
+.percent-alt {
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+/* lookbook section */
+
+.lookbook-container {
+display: flex;
+flex-direction: column;
+text-align: center;
+padding: 10rem 0;
+gap: 10rem;
+}
+
+.lookbook-container h5{
+  font-size: 4rem;
+  font-weight: bold;
+
+}
+
+/* .lookbook-img-wrapper {
+  justify-content: space-evenly;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+} */
+
+
+.lookbook-img-wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: flex;
+}
+
+.column-one {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+}
+
+.column-two {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+}
+.column-three {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+}
+
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
+
+@media (max-width:1634px) {
+    .sideways-text {
+      display: none;
+    }
+}
+
+@media (max-width:1461px) {
+  .triple-container h4{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width:920px) {
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  header nav + a {
+    display: none;
+  }
+
+  .ham {
+    display: block;
+  }
+
+  .momentum-text{
+    text-align: center;
+  }
+
+  .momentum-pic {
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 720px) {
+  h1 {
+    font-size: 7rem;
+  }
+
+}
+/* 
+@media {
+  .read-more {
+    width: 100%;
+  }
+} */
+
+@media (max-width:493px) {
+
+  .triple-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .row {
+    width: 100%;
+  }
+
+}
+
+@media (max-width:425px) {
+  .styler-wrapper {
+    gap: 20px;
+  }
+}
+
+
+
+@media (max-width:375px) {
+  .lookbook-img-wrapper {
+    flex-wrap: wrap;
+  }
+
+
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .services-btn {
+    width: 100%;
+  }
+
+  .first-visit {
+    width: 100%;
+    text-align: center;
+  }
+
+
+  .book-btn {
+    width: 100%;
+  }
+
+  .momentum-container h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .momentum-container {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .momentum-text {
+    align-items: center;
+  }
+
+  .momentum-text p {
+    text-align: center;
+  }
+
+  .momentum-img-container {
+    padding-top: 2rem;
+  }
+
+  .momentum-pic {
+    display: none;
+  }
+
+  .read-more {
+    width: 100%;
+  }
+
+  .column-one {
+    width: 100%;
+  }
+  .column-two {
+    width: 100%;
+  }
+  .column-three {
+    width: 100%;
+  }
+
+  .row {
+    width: 100%;
+  }
+
+  .color-day-container {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .color-day-container h5 {
+    font-size: 4rem;
+  }
+
+  .color-day-container p {
+    font-size: 2rem;
+  }
+
+  .appt-btn {
+    width: 100%;
+  }
+
+  .triple-container {
+    flex-wrap: wrap;
+  }
+
+
+  .lookbook-container h5 {
+    font-size: 3rem;
+  }
+
+}
+
+@media (max-width:325px) {
+
+
+    .triple-container h4{
+      font-size: 2rem;
+    }
+}
+
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

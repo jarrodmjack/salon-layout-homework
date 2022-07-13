@@ -97,7 +97,8 @@ header nav ul {
 /*  Main Section */
 
 .mainbg-img {
-  background-image: url(/assets/bg-main3.jpeg);
+  /* background-image: url(/assets/bg-main3.jpeg); */
+  background-image: url(/assets/wp4328666.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -312,6 +313,13 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 300px;
+}
+
+
+.stylist-img {
+  width: 100%;
+  height: 200px;
 }
 
 
@@ -414,6 +422,14 @@ gap: 10rem;
   width: 30%;
 }
 
+div.column-three img:hover,
+div.column-two img:hover,
+div.column-one img:hover{
+  opacity: .8;
+  cursor: pointer;
+  border: 3px solid black;
+}
+
 
 /******************************************
 /* MEDIA QUERIES
@@ -476,7 +492,9 @@ gap: 10rem;
 } */
 
 @media (max-width:493px) {
-
+.read-more {
+    width: 100%;
+  }
   .triple-container {
     flex-wrap: wrap;
     flex-direction: column;
